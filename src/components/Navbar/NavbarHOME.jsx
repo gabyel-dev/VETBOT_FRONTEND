@@ -81,7 +81,7 @@ export default function NavBarHome({ onClick }) {
           </motion.section>
         )}
       </AnimatePresence>
-      <div className="__nav_home__ z-30 bg-white fixed  w-full min-h-10 h-14 md:h-20 md:px-10 px-10 lg:px-20 py-5 flex items-center justify-between  shadow-sm">
+      <div className="__nav_home__ z-300 bg-white fixed  w-full min-h-10 h-14 md:h-20 md:px-10 px-10 lg:px-20 py-5 flex items-center justify-between  shadow-sm">
         {window.location.pathname.startsWith("/chat") && (
           <Link
             to={"/"}

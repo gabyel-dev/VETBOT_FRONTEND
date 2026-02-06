@@ -11,10 +11,9 @@ export default function ChatMessages({ messages, loading }) {
             return (
               <div
                 key={index}
-                className="w-full flex flex-col items-end justify-end relative mx-auto"
+                className="w-full flex flex-col items-end justify-end relative mx-auto pt-5"
               >
                 <span className="poppins text-xs">You</span>
-                <span className=""></span>
 
                 <section className="bg-[var(--orange)] text-white ml-10 max-w-2/3 w-fit px-5 py-2 rounded-br-4xl rounded-l-4xl">
                   {msg.text}
@@ -66,7 +65,7 @@ export default function ChatMessages({ messages, loading }) {
                     <span className="text-xs font-light">AI Assistant</span>
                   </p>
                 </section>
-                <section className="bg-gray-100 shadow-xl border-1 border-gray-300 ml-10 max-w-2/3 p-5 rounded-bl-4xl rounded-r-4xl">
+                <section className="bg-gray-100 shadow-xl border-1 border-gray-300 ml-10 max-w-full md:max-w-2/2 p-5 rounded-bl-4xl rounded-r-4xl">
                   <span className="__urgency__ bg-[var(--orange)]  flex justify-between items-center rounded-full px-4 py-2  text-white">
                     <h1 className="text-sm ">
                       Urgency: &nbsp;&nbsp;
