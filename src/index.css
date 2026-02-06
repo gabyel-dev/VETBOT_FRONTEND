@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+.mont {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "oughter";
+  src: url("/font/Oughter.otf");
+}
+
+@font-face {
+  font-family: "grotesk";
+  src: url("/font/RightGrotesk-WideMedium.otf");
+}
+
+:root {
+  --black: #2d3142;
+  --lgray: #bfc0c0;
+  --orange: #ef8354;
+  --dgray: #4f5d75;
+}
+
+.__pet_button__ {
+  box-shadow:
+    rgba(0, 0, 0, 0.09) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.__dot__ {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.__dot1__ {
+  animation-delay: 0s;
+}
+.__dot2__ {
+  animation-delay: 0.2s;
+}
+.__dot3__ {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
