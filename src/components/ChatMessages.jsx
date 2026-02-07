@@ -15,7 +15,7 @@ import { GoDotFill } from "react-icons/go";
 export default function ChatMessages({ messages, loading }) {
   return (
     <div className="w-full flex items-center flex-col h-auto pb-2 overflow-auto max-h-180  relative z-100">
-      <section className="w-full max-w-3xl mx-auto  space-y-8 ">
+      <section className="w-full max-w-3xl mx-auto  mt-5 space-y-8 ">
         {messages?.map((msg, index) => {
           if (msg?.role === "user") {
             return (
@@ -67,7 +67,7 @@ export default function ChatMessages({ messages, loading }) {
                   : "Monitor Closely";
 
             return (
-              <div key={index} className="flex">
+              <div key={index} className="flex flex-col gap-5">
                 <div className="flex-1">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="font-semibold text-gray-800">VetBot</span>
@@ -247,19 +247,18 @@ export default function ChatMessages({ messages, loading }) {
                     </div>
                   )}
                 </div>
+                <section className="__chat_options__ text-[var(--dgray)] text-xl flex gap-4">
+                  <span className="__copy__ ">
+                    <LuCopy />
+                  </span>
+                  <span className="__retry__">
+                    <FiRotateCcw />
+                  </span>
+                </section>
               </div>
             );
           }
         })}
-
-        <section className="__chat_options__ text-[var(--dgray)] text-xl flex gap-4">
-          <span className="__copy__ ">
-            <LuCopy />
-          </span>
-          <span className="__retry__">
-            <FiRotateCcw />
-          </span>
-        </section>
       </section>
 
       {/* Loading State */}
