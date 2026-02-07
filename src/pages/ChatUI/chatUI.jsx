@@ -47,7 +47,7 @@ export default function ChatUI() {
                 </span>
               </h1>
 
-              <p className="text-normal md:text-base text-sm pt-3 text-gray-500 w-full md:w-full lg:w-1/2 text-center poppins">
+              <p className="text-normal md:text-base text-sm pt-3 text-gray-500 w-full md:w-full lg:w-full text-center poppins">
                 AI-powered pet symptom checker for quick guidance—anytime,
                 anywhere. Describe your pet’s symptoms and get instant advice on
                 what to do next.

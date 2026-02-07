@@ -73,10 +73,10 @@ export default function ChatInput({ setMessages, setSend, loading }) {
 
   return (
     <div className="relative  h-fit w-full">
-      <div className="container mx-auto py-4">
+      <div className="container  py-4">
         <div className=" ">
           {/* Input container with better styling */}
-          <div className="relative z-100 rounded-4xl flex items-center justify-center border-2 h-fit border-[var(--orange)] bg-white shadow-sm transition-all duration-200 focus-within:border-orange-500 focus-within:shadow-md">
+          <div className="relative z-100 rounded-4xl px-5 py-2 flex items-center justify-center border-2 h-fit border-[var(--orange)] bg-white shadow-sm transition-all duration-200 focus-within:border-orange-500 focus-within:shadow-md">
             <textarea
               ref={textareaRef}
               value={userInput}
@@ -84,18 +84,18 @@ export default function ChatInput({ setMessages, setSend, loading }) {
               onKeyDown={handleKeyPress}
               placeholder={`Describe your ${pet_type || "your pet"}'s symptoms...`}
               disabled={isLoading}
-              className="w-full resize-none outline-none border-none wrap-break-word px-5 py-4 pr-16 min-h-[60px] max-h-[120px] text-gray-800 placeholder-gray-400 disabled:opacity-50"
+              className="w-full resize-none outline-none border-none wrap-break-word  pr-16 min-h-[30px]  max-h-[120px] text-gray-800 placeholder-gray-400 disabled:opacity-50"
               rows="1"
             />
 
             {/* Send button with loading state */}
-            <div className="absolute right-3 bottom-3">
+            <div className="absolute right-3 bottom-2">
               <button
                 onClick={handleSend}
                 disabled={!userInput.trim() || isLoading}
                 className={`
                   flex items-center justify-center 
-                  w-10 h-10 rounded-full 
+                  w-15 h-8 rounded-full 
                   transition-all duration-200 
                   ${
                     !userInput.trim() || isLoading
